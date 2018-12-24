@@ -95,6 +95,8 @@
                   <Component id="jLabel9" min="-2" pref="126" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="157" max="-2" attributes="0"/>
                   <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                  <Component id="dateChooserCombo1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -104,7 +106,10 @@
               <Component id="jLabel9" min="-2" pref="120" max="-2" attributes="0"/>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
-                  <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="dateChooserCombo1" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
           </Group>
         </DimensionLayout>
@@ -125,6 +130,8 @@
             </Property>
             <Property name="text" type="java.lang.String" value="jLabel9"/>
           </Properties>
+        </Component>
+        <Component class="datechooser.beans.DateChooserCombo" name="dateChooserCombo1">
         </Component>
       </SubComponents>
     </Container>
@@ -179,7 +186,6 @@
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="txt_telp" min="-2" pref="196" max="-2" attributes="0"/>
                               <Component id="boxGender" min="-2" pref="147" max="-2" attributes="0"/>
-                              <Component id="dateTgl" min="-2" pref="196" max="-2" attributes="0"/>
                               <Component id="txt_tempat" min="-2" pref="196" max="-2" attributes="0"/>
                               <Component id="txt_nama" min="-2" pref="195" max="-2" attributes="0"/>
                               <Group type="102" alignment="0" attributes="0">
@@ -193,6 +199,7 @@
                                       <Component id="btnHapus" alignment="1" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
+                              <Component id="dateTgl" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -223,17 +230,12 @@
                       <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                       <Component id="txt_tempat" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                          <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="dateTgl" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                      <Component id="dateTgl" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                       <Component id="boxGender" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -292,8 +294,6 @@
             <Property name="text" type="java.lang.String" value="Tanggal Lahir"/>
           </Properties>
         </Component>
-        <Component class="datechooser.beans.DateChooserCombo" name="dateTgl">
-        </Component>
         <Component class="javax.swing.JLabel" name="jLabel6">
           <Properties>
             <Property name="text" type="java.lang.String" value="Jenis Kelamin"/>
@@ -350,6 +350,8 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_resetActionPerformed"/>
           </Events>
+        </Component>
+        <Component class="datechooser.beans.DateChooserCombo" name="dateTgl">
         </Component>
       </SubComponents>
     </Container>
